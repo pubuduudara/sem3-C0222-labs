@@ -1,0 +1,33 @@
+* Trace tree for the function mystery1()   
+
+    mystery1(3902) -----> display 2
+    			|
+    			|
+    			mystery1(390) -----> display 0
+    						|
+    						|
+    						mystery1(39) -----> display 9
+    								   |
+    								   |
+    								   mystery1(3) -----> display 3
+                                       |
+                                       |
+                                       mystery1(0)
+
+
+
+* Trace tree for the function mystery2()
+
+	    mystery2(3902) 
+    			|										
+    			|										
+    			mystery2(390)                                  n%10=2. Therfore, display 2 
+    						|							                 ^
+    						|							                 |
+    						mystery2(39)                       n%10=0. Therfore, display 0 
+    								   |				                 ^
+    								   |				                 |
+    								   mystery2(3)             n%10=9. Therfore, display 9
+                                                 |                       ^
+                                                 |                       |
+                                                 mystery2(0) ; n%10=3. Therfore, display 3
